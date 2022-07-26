@@ -9,7 +9,7 @@ const Product = () => {
 
   const getProducts = async () => {
     let searchQuery = query.get('q') || ""
-    let url = `https://my-json-server.typicode.com/${process.env.REACT_APP_GITHUB_USERNAME}/${process.env.REACT_APP_GITHUB_REPO}/products?q=${searchQuery}`
+    let url = `https://my-json-server.typicode.com/me33x3/hnm-react-practice/products?q=${searchQuery}`
     let response = await fetch(url)
     let data = await response.json()
 
